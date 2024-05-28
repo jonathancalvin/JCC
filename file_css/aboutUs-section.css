@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Serif:wght@300;400;600&display=swap');
+:root{
+    font-size: 1.25vw;
+}
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000;;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Roboto Serif', serif;
+}
+body{
+    min-height: 100vh;
+    padding-top: 20vw;
+    padding-bottom: 35vw;
+    position: relative;
+    background-image: url(../asset/bg-white02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+section{
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vw;
+}
+.section-container{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 3vw;
+}
+.History-title{
+    margin-bottom: 5vw;
+}
+.History-title h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.History-C{
+    display: flex;
+    flex-direction: row;
+    padding: 0 1vw;
+    /* background-color: white; */
+    padding: 5vw 2vw;
+}
+.section-container .img-container{
+    flex: 1;
+}
+.section-container .img-container img{
+    width: 100%;
+}
+.history-container{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vw;
+}
+.History-Date{
+    display: flex;
+    justify-content: center;
+}
+.History-Date h1{
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 1px solid #0C1A27;
+    width: 90%;
+}
+.History-Content{
+    /* border: 2px solid blue; */
+    padding: 0 2vw;
+}
+.History-Content h3{
+    font-size: 1.2rem;
+    margin-bottom: 5vw;
+    line-height: 1.5rem;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.section-container2{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    padding: 0 3vw;
+}
+.section-container2 .img-container{
+    flex: 1;
+    height: 49.03vw;
+}
+.section-container2 .img-container img{
+    width: 100%;
+    height: 100%;
+}
+.divider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 7vw;
+    margin-top: 10vw;
+}
+.divider h1{
+    font-size: 4.5rem;
+    color: #b16612fa;
+    color: #000;
+}
+.divider div{
+    background-color: black;
+    height: 0.2rem;
+    width: 85vw;
+}
+.Certificate-section{
+    width: 100%;
+    padding: 3vw 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 5vw;
+}
+.Certificate-section > div{
+    padding: 0 2vw;
+    /* border: 2px solid #0C1A27; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+    align-items: center;
+}
+.Certificate-section h1{
+    padding: 1vw 0;
+    text-align: center;
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: #0C1A27 1px solid;
+}
+
+.certificate-img{
+    width: 50vw;
+}
+.certificate-img img{
+    width: inherit;
+}
+.certificate-description{
+    text-align: start;
+    width: 70%;
+}
+.certificate-description h4{
+    margin-bottom: 2vw;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+
+@media (max-width : 768px){
+    .history-container{
+        flex: 1.3;
+        row-gap: 3.5vw;
+    }
+    .History-Date h1{
+        font-size: 3.5rem;
+    }
+    .History-Content h3{
+        padding: 1rem 2rem;
+        font-size: 1.7rem;
+        line-height: 1.5rem;
+    }
+    .section-container2 .img-container {
+        height: 60vw;
+    }
+    .Certificate-section > div {
+        row-gap: 5vw;
+    }
+    .Certificate-section h1 {
+        font-size: 3rem;
+        width: 80%;
+    }
+    .certificate-img {
+        width: 60vw;
+    }
+    .certificate-description {
+        width: 100%;
+    }
+    .certificate-description h4{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+}
+@media (max-width: 480px){
+    .History-C{
+        display: flex;
+        flex-direction: column;
+    }
+    .History-C{
+        row-gap: 3.5vw;
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .img-container img{
+        width: 80vw;
+    }
+    .history-container{
+        flex: 1.3;
+        row-gap: 3.5vw;
+    }
+    .History-Date h1{
+        font-size: 3.5rem;
+    }
+    .History-Content h3{
+        padding: 1.5rem 2.5rem;
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+    }
+    .section-container2 .img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .section-container2 .img-container img{
+        width: 80vw;
+    }
+    .Certificate-section > div {
+        row-gap: 5vw;
+    }
+    .Certificate-section h1 {
+        font-size: 3rem;
+        width: 80%;
+    }
+    .certificate-img {
+        width: 60vw;
+    }
+    .certificate-description {
+        width: 100%;
+    }
+    .certificate-description h4{
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+    }
+}

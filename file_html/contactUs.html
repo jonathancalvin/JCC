@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../file_css/contactUs.css">
+    <link rel="stylesheet" href="../file_css/header.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <button>JCC</button>
+            </div>
+            <a href="#" class="hamburger-button" id="hamburgerButton">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <ul id="navBar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="eventPage.html">Event</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1>Contact Jockey Conference Center</h1>
+            <h3>We are here to help you</h3>
+        </div>
+    </header>
+    <section>
+        <form class="container" id="form-container">
+            <div>
+                <h2>Send a Message</h2>
+                <div class="contactForm">
+                    <div class="inputForm">
+                        <input type="text" id="name" required>
+                        <span>Name</span>
+                    </div>
+                    <div class="inputForm">
+                        <input type="email" id="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputForm tel-num-container">
+                        <input type="tel" id="tel-num" required>
+                        <span>Phone Number +xx xxx xxx xxxx</span>
+                    </div>
+    
+                    <div class="inputForm Gender-container">
+                        <div>
+                            <h3>Gender</h3>
+                            <label >
+                                <input type="radio" id="male" name="gender">
+                                Male
+                            </label>
+                            <label >
+                                <input type="radio" id="female" name="gender">
+                                Female
+                            </label>
+                        </div>
+    
+                    </div>
+    
+                    <div class="inputForm contactMethod">
+                        <div>
+                            <h3>Preferred Contact Method</h3>
+                            <label >
+                                <input id="emailCheckBox" type="checkbox">
+                                Email
+                            </label>
+                            <label for="">
+                                <input id="phoneCheckBox" type="checkbox">
+                                Phone
+                            </label>
+                        </div>
+    
+                    </div>
+                    <div class="inputForm textarea-container">
+                        <textarea id="message" required></textarea>
+                        <span>Type your message here</span>
+                    </div>
+                    <div class="inputForm submit-container">
+                        <input id="submit-button" type="submit" value="send">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="../file_js/contactUs.js"></script>
+    <script src="../file_js/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Serif:wght@300;400;600&display=swap');
+:root{
+    font-size: 1.25vw;
+}
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000;;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Roboto Serif', serif;
+}
+body{
+    min-height: 100vh;
+    padding-top: 7vw;
+    padding-bottom: 30vw;
+    position: relative;
+    background-image: url(../asset/bg-white02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.section-container{
+    margin: 5vw;
+    /* background-color: lightpink; */
+}
+#package-container{
+    padding: 10vw 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 5vw;
+}
+#package-container > div{
+    /* margin: 1vw; */
+    padding: 5vw 2vw;
+    display: flex;
+    flex-direction: row;
+    row-gap: 2vw;
+}
+img{
+    width: 2vw;
+}
+.packageImage-container0{
+    margin-left: 3vw;
+    display: flex;
+    width: 250vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../asset/CC1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.packageImage-container1{
+    margin-left: 3vw;
+    display: flex;
+    width: 250vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../asset/CC2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.packageImage-container2{
+    margin-left: 3vw;
+    display: flex;
+    width: 250vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../asset/CC3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* .packageImage{
+    width: 30vw;
+    height: 50vh;
+
+} */
+.package-content > div{
+    margin: 2vw;
+}
+.Tier{
+    border-bottom: 1px solid #0C1A27;
+}
+.Tier h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+.Price h2{
+    font-size: 2rem;
+}
+.Desc h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.section-container ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+.section-container li{
+    display: flex;
+    flex-direction: row;
+}
+.package-content button{
+    margin: 2vw;
+}
+.package-content button img{
+    width: 1.3vw;
+    vertical-align: middle;
+}
+.package-content button{
+    background-color: transparent;
+    font-size: 0.8rem;
+    outline: none;
+    margin-top: 1.5em;
+    padding: 0.3em;
+    color: black;
+    cursor: pointer;
+    width: 12vw;
+    padding: 1vw 0;
+}
+.package-content button:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+@media (max-width: 768px){
+    .packageImage-container0{
+        margin-left: 3vw;
+        display: flex;
+        width: 250vw;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../asset/CC1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .packageImage-container1{
+        margin-left: 3vw;
+        display: flex;
+        width: 250vw;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../asset/CC2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .packageImage-container2{
+        margin-left: 3vw;
+        width: 250vw;
+    }
+    .package-content > div{
+        margin: 2.5vw;
+    }
+    .Tier h1{
+        text-align: center;
+        font-size: 3em;
+    }
+    .Price h2{
+        font-size: 2.5rem;
+    }
+    .Desc h3{
+        font-weight: 500;
+        font-size: 1.7rem;
+    }
+    .section-container li p{
+        font-size: 1.5rem;
+    }
+    .section-container ul{
+        row-gap: 3vw;
+    }
+    .package-content button img{
+        width: 1.7vw;
+    }
+    .package-content button{
+        border: 1px solid black;
+        font-size: 1.5rem;
+        width: 20vw;
+        padding: 1.5vw 0;
+    }
+    .package-content button:hover{
+        box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+    }
+}
+@media (max-width: 480px){
+    #package-container{
+        row-gap: 10vw;
+    }
+    #package-container > div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .packageImage-container0{
+        justify-content: center;
+        align-items: center;
+        height: 60vw;
+        width: 100%;
+    }
+    .packageImage-container1{
+        height: 60vw;
+        width: 100%;
+    }
+    .packageImage-container2{
+        height: 60vw;
+        width: 100%;
+    }
+    .Tier h1{
+        text-align: center;
+        font-size: 3.7em;
+    }
+    .Price h2{
+        font-size: 3.2rem;
+    }
+    .Desc h3{
+        font-weight: 500;
+        font-size: 2.4rem;
+    }
+    .section-container li p{
+        font-size: 2.2rem;
+    }
+    .section-container ul{
+        row-gap: 3.5vw;
+    }
+    .package-content button img{
+        width: 2vw;
+    }
+    .package-content button{
+        font-size: 2.2rem;
+        width: 27vw;
+        padding: 2vw 1vw;
+    }
+}

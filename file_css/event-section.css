@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Serif:wght@300;400;600&display=swap');
+:root{
+    font-size: 1.25vw;
+}
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000;;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Roboto Serif', serif;
+}
+body{
+    min-height: 100vh;
+    padding-top: 15vw;
+    padding-bottom: 35vw;
+    position: relative;
+    background-image: url(../asset/bg-white02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+section{
+    /* border: 5px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5vw;
+}
+.section-container{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vw;
+}
+.section-container > div{
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* padding-bottom: 3vw; */
+    position: relative;
+    column-gap: 2.5vw;
+}
+
+.img-container0{
+    flex: 0.8;
+    background-image: url(../asset/E1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-container1{
+    flex: 0.8;
+    background-image: url(../asset/E3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-container2{
+    flex: 0.8;
+    background-image: url(../asset/E5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-container3{
+    background-image: url(../asset/E0.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 0.8;
+}
+.img-container4{
+    background-image: url(../asset/E6.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 0.8;
+}
+.section-container .event-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+}
+.event-info h2{
+    grid-column: 1 / span 2;
+    font-size: 1.5rem;
+}
+.event-info h3{
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 1.5rem;
+    margin: 1vw 0;
+}
+.event-info h4{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.event-info button img{
+    width: 1.3vw;
+    vertical-align: middle;
+}
+.event-info button {
+    background-color: transparent;
+    font-size: 0.8rem;
+    outline: none;
+    cursor: pointer;
+    margin-top: 1.5em;
+    padding: 0.3em;
+    color: black;
+    width: 12vw;
+    padding: 1vw 0;
+}
+.event-info button:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+@media (max-width: 768px){
+    section{
+        padding-top: 3vw;
+    }
+    .section-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12vw;
+    }
+    .section-container > div{
+        display: flex;
+        flex-direction: row;
+        column-gap: 3vw;
+    }
+    .img-container0, .img-container1, .img-container2, .img-container3, .img-container4{
+        flex: 0.9;
+    }
+    .section-container .event-info{
+        flex: 1;
+        padding-left: 1vw;
+    }
+    .event-info h2{
+        font-size: 2.5rem;
+    }
+    .event-info h3{
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    .event-info h4{
+        font-size: 1.8em;
+    }
+    .event-info button{
+        width: 40%;
+        padding: 1.5vw;
+        margin-top: 6vw;
+        font-size: 1.5rem;
+        border: 1px solid black;
+    }
+    .event-info button:hover{
+        box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+    }
+}
+@media (max-width: 480px){
+    .section{
+        padding-top: 5vw;
+    }
+    .section-container{
+        row-gap: 20vw;
+    }
+    .section-container > div{
+        /* padding: 0;
+        flex-wrap: wrap;
+        row-gap: 10vw; */
+        /* display: flex;
+        flex-direction: column; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vw;
+        grid-row-gap: 10vw;
+    }
+    .img-container0, .img-container1, .img-container2, .img-container3, .img-container4{
+        flex: 0.9;
+    }
+    .section-container .event-info{
+        flex: 0.5;
+        padding: 0;
+    }
+    .event-info h2{
+        font-size: 3.5rem;
+    }
+    .event-info h3{
+        padding: 2vw 0;
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+    .event-info h4{
+        font-size: 2.5rem;
+    }
+    .event-info button{
+        width: 30%;
+        padding: 2vw;
+        font-size: 2.5rem;
+        left: 0;
+        bottom: -10vw
+    }
+}

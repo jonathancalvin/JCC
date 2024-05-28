@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Serif:wght@300;400;600&display=swap');
+:root{
+    font-size: 1.25vw;
+}
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000;;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Roboto Serif', serif;
+}
+body{
+    min-height: 100vh;
+    padding-top: 7vw;
+    padding-bottom: 30vw;
+    position: relative;
+    background-image: url(../asset/bg-white02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 5vw;
+    margin: 5vw 0;
+}
+.brief-description-container{
+    /* border: 2px solid black; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+.conference-brief-content{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5vw;
+}
+.conference-brief-content p{
+    text-align: justify;
+    font-size: 1rem;
+    padding: 1em;
+    line-height: 1.4rem;
+}
+.conference-image-container{
+    width: 45vw;
+    margin-right: 2em;
+    margin-left: 1.6em;
+}
+.conference-image{
+    width: inherit;
+}
+.latest-upcoming-event-container{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid 1px black; */
+    flex-wrap: wrap;
+    padding: 2.5em;
+}
+.latest-upcoming-img-container{
+    margin-right: 3vw;
+    width: 45vw;
+}
+.latest-upcoming-image{
+    width: inherit;
+}
+.countdown-container{
+    flex: 1;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.76rem;
+}
+.countdown-container h3{
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+.countdown-container p{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.event-time-container{
+    display: flex;
+}
+.event-time-container div{
+    flex-basis: 10vw;
+}
+.event-time-container div p{
+    font-size: 3rem;
+    margin-bottom: -0.2em;
+}
+.event-time-container span{
+    font-size: 1rem;
+}
+.countdown-container button{
+    background-color: transparent;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    outline: none;
+    margin-top: 1.5em;
+    padding: 0.3em;
+    color: black;
+    cursor: pointer;
+    width: 12vw;
+    padding: 1vw 0;
+}
+.countdown-container button img{
+    width: 1.3vw;
+    vertical-align: middle;
+}
+.countdown-container button:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+@media (max-width: 768px){
+    body{
+        padding-bottom: 30vw;
+    }
+    .brief-description-container{
+        margin: 5vw 0;
+        padding: 5vw 0;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .conference-image-container{
+        width: 80vw;
+    }
+    .conference-brief-content{
+        width: 80vw;
+        padding: 0;
+    }
+    .conference-brief-content p{
+        text-align: center;
+
+        margin-bottom: -2rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .latest-upcoming-event-container{
+        padding: 5vw 0;
+        flex-direction: column;
+        row-gap: 5vw;
+    }
+    .event-time-container span{
+        font-size: 1.3rem;
+    }
+    .latest-upcoming-img-container{
+        margin-right: 3vw;
+        width: 80vw;
+    }
+    .latest-upcoming-image{
+        width: inherit;
+    }
+    .countdown-container {
+        width: 84vw;
+        display: grid;
+        grid-template-columns: 24vw 32vw 28vw;
+        grid-template-rows: 1fr 1fr;
+    }
+    .countdown-container h3{
+        color: black;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+    .countdown-container p{
+        color: black;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .event-time-container{
+        padding-right: 2vw;
+    }
+    .countdown-container button{
+        margin-top: 0;
+        height: 5vw;
+        width: 15vw;
+        padding: 0.5vw 0;
+        font-size: 1.5rem;
+    }
+    .countdown-container button img{
+        width: 2vw;
+        vertical-align: middle;
+    }
+}
+@media (max-width: 480px){
+    body{
+        padding-top: 10vw;
+    }
+    .conference-image-container{
+        width: 80vw;
+    }
+    .conference-brief-content{
+        width: 80vw;
+        padding: 0;
+    }
+    .conference-brief-content p{
+        text-align: center;
+
+        margin-bottom: -2rem;
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .latest-upcoming-event-container{
+        flex-direction: column;
+        row-gap: 5vw;
+    }
+    .latest-upcoming-img-container{
+        margin-right: 3vw;
+        width: 84vw;
+    }
+    .latest-upcoming-image{
+        width: inherit;
+    }
+    
+    .countdown-container{
+        flex: 1;
+        width: 86vw;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.76rem;
+    }
+    .countdown-container h3{
+        color: black;
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+    .countdown-container p{
+        color: black;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    .event-time-container{
+        padding-right: 2vw;
+        width: 50vw;
+        margin-bottom: 2vw;
+    }
+    .event-time-container div p{
+        margin-bottom: 0.5vw;
+    }
+    .event-time-container span{
+        font-size: 1.5rem;
+    }
+
+    .countdown-container button{
+        margin-top: 0;
+        height: 6vw;
+        width: 18vw;
+        padding: 0.8vw 0;
+        font-size: 1.8rem;
+    }
+    .countdown-container button img{
+        width: 2.5vw;
+        vertical-align: middle;
+    }
+}
